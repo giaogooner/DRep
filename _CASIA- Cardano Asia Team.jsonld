@@ -1,0 +1,86 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject",
+            "contentUrl": "CIP119:contentUrl",
+            "sha256": "CIP119:sha256"
+          }
+        },
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": " CASIA- Cardano Asia Team",
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://drive.google.com/file/d/1r8A8SE8zRQaYMeoAOgjoDY9qzUOOtqb1/view?usp=sharing",
+      "sha256": "2e3aad32a189a5c3520e47d0cff895676ec5a0d2ec15f7ec62332079526cef20"
+    },
+    "motivations": "If you are Eastern Asian communities (who are non-native English speakers such as Vietnam, Japan, South Korean or China); you can delegate for us- CASIA. We are making your voices mattered.",
+    "objectives": "Our core principles are 1. true decentralization 2. scalability and affordability application 3. beyond barriers",
+    "paymentAddress": "addr1qyqjwnakt4jqafefkagqppm258wagsdshjy9kaerseu5qnhst06wzdhkx8xkt9qp55j5v952szxtsqc76snanf9twmwsn4gqjj",
+    "qualifications": "Our 5 years dedications for the Eastern Cardano communities since 2019. SPO and joined project Catalyst since Fund 7",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "CASIA-Cardano Asia Tiktok channel",
+        "uri": "https://www.tiktok.com/@cardano.asia"
+      },
+      {
+        "@type": "Identity",
+        "label": "(CIP-105)drep17pxh60vrch90fhqnj578064jka7hpuq6axx52g2qygjp7l0cyjd",
+        "uri": "https://tempo.vote/drep-profile?dRepId=drep1ytcy6lfas0zu4axuzw2ncal2k2mh6u8srt5c63fpgq3zg8cd2437d"
+      }
+    ]
+  }
+}
